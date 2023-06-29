@@ -1,46 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compre cafés gourmets e especiais diretamente os cafeicutores de todas as regiões do Brasil">
     <title>CoffeeStore</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header_bar">
-        <div class="header_logo">
-            <img src="/code/img/coffee_logo.svg" alt="Logo">
-            <h1>CoffeeStore</h1>
-        </div>
-        <navbar class="header_nav">
-            <ul>
-               <li><a href="#">Início</a></li> 
-               <li><a href="#">Planos</a></li> 
-               <li><a href="#">Parceiros</a></li>
-               <li><a href="#">Associe-se</a></li> 
-            </ul>
-        </navbar>
-        <div class="header_icon">
-            <div id="icon_login">
-                <svg enable-background="new 0 0 500 500" id="Layer_1" version="1.1" viewBox="0 0 500 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M250,291.6c-52.8,0-95.8-43-95.8-95.8s43-95.8,95.8-95.8s95.8,43,95.8,95.8S302.8,291.6,250,291.6z M250,127.3    c-37.7,0-68.4,30.7-68.4,68.4s30.7,68.4,68.4,68.4s68.4-30.7,68.4-68.4S287.7,127.3,250,127.3z" stroke="currentcolor" /></g><g><path d="M386.9,401.1h-27.4c0-60.4-49.1-109.5-109.5-109.5s-109.5,49.1-109.5,109.5h-27.4c0-75.5,61.4-136.9,136.9-136.9 S386.9,325.6,386.9,401.1z"/></g></g></svg>
+    
+    <header>
+        <section class="header_bar">            
+            <h1 class="header_bar__brand">CoffeeStore</h1>
+            <navbar class="header_bar__nav">
+                <ul>
+                    <li><a href="#">Início</a></li> 
+                    <li><a href="#">Planos</a></li> 
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Associe-se</a></li> 
+                </ul>
+            </navbar>
+            <div class="header_account">
+                <div class="header_account__buttons">
+                    <button class="buttons__login">Entrar</button>
+                    <button class="buttons__create">Cadastre-se</button>
+                </div>
             </div>
-            <div id="icon_basket">
-                <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:"currentcolor";stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}.st1{fill:none;stroke:"currentcolor";stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}.st2{fill:none;stroke:"currentcolor";stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}.st3{fill:none;}</style><path class="st0" d="M3,14h8l3.4-7.9c0.3-0.7,1-1.1,1.8-1.1h7.1c0.7,0,1.2,0.8,0.9,1.4L21,14"/><line class="st0" x1="11" y1="14" x2="29" y2="14"/><path class="st0" d="M22.4,27H9.6c-1.5,0-2.7-1.1-3-2.5L5,14h22l-1.6,10.5C25.2,25.9,23.9,27,22.4,27z"/><rect x="-72" y="-72" class="st3" width="536" height="680"/></svg>
-            </div>
-        </div>
-    </header>
-    <section class="menu_products">
-        <div class="menu_products_type">
+        </section>
+
+        <section class="menu_products">
+
+        <!-- <div class="menu_products_type">
             <a href="#">Café</a>
             <a href="#">Cafeteiras</a>
             <a href="#">Acessórios</a>
             <a href="#">Workshops</a>
+        </div> -->
+
+        </section>
+    </header>
+
+    <main>
+        <div class="main_area">
+            <!-- <section class="catalog">
+                <aside class="catalog_filter">
+                    <div>
+                        <h5>tipo</h5>
+                        <div>
+                            <label for="">a</label>
+                        </div>
+
+                    </div>
+                </aside>
+                <div class="catalog_products"></div>
+            </section> -->
+            
+            <!-- <aside class="filter"></aside>
+
+            <section class="products">
+                
+                <div class="filter_products">
+                <div class="fill">
+                        <form>
+                            <select name="dropdown" id="dropdown">
+                                <option value="Ordenar por" selected>Ordenar por</option>
+                                <option value="Maior preço">Maior preço</option>
+                                <option value="Menor preço">Menor preço</option>
+                                <option value="Melhores avaliações">Melhores avaliações</option>
+                            </select>
+                        </form>                       
+                </div>
+                </div>
+                
+                <div class="mudarNome">
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="product_item">
+                        <div class="item">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+            </section> -->
         </div>
-    </section>
-    <section>
-        <aside class="filter"></aside>
-        <main class="products"></main>
-    </section>
-    <footer></footer>
+    </main>
+
+
+    <footer>
+        <div class="footer_area">
+            <div class="footer_area_top">
+                <p>newsletter</p>
+            </div>
+            <div class="footer_area_mid">
+                <div class="footer_content_institucional"></div>
+            </div>
+            <div class="footer_area_down">
+                <div class="footer_content_payment"></div>
+                <div class="footer_content_certificate"></div>
+            </div>
+        </div>    
+    </footer>
 </body>
