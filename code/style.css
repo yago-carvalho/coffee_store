@@ -8,7 +8,6 @@
 
 :root {
     font-size: 62.5%;
-
     --color-primary: #f2efea;
     --color-secondary: #d37257;
     --color-text: #3d5336;
@@ -27,7 +26,6 @@ body{
     background-color: var(--color-secondary);
     display: flex;
     align-items: center;
-    /* box-shadow: 0px 2px 3px 0px rgba(0,0,0, .5); */
 }
 
 .header_bar__brand{
@@ -64,7 +62,6 @@ body{
 
 .header_bar__nav a:hover {
     color: #EBEFF2;
-    /* transition: 0.1s; */
     border-bottom: 3px solid #EBEFF2;
 }
 
@@ -137,17 +134,17 @@ body{
 }
 
 .dropdown1{
-    margin-left: -2em;
+    margin-left: -1.7em;
 }
 
 .dropdown2{
-    margin-left: -10em
+    margin-left: -7.6em
 }
 .dropdown3{
-    margin-left: -24.3em
+    margin-left: -18em
 }
 .dropdown4{
-    margin-left: -39.1em
+    margin-left: -28.8em
 }
 
 .dropdown:hover .products__dropdown {
@@ -184,29 +181,33 @@ body{
     transition: .2s;
 }
 
-
-
 .header_bar__menu h2 {
     margin: 0;
     letter-spacing: 1px;
     font-weight: 500;
 }
 
-/* main */
+main {
+    height: auto;
+}
+
+footer {
+    margin-top: 10px;
+}
 
 .main_area {
-    /* height: 100vh; */
+    height: 150em;
     /* background-color: #dce0e2; */
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 1.6em 1.6em;
 }
 
 .catalog__aside {
-    /* height: 500; */
     width: 22em;
-    /* margin-left: 2em; */
-    /* border: 1px solid black; */
+    /* height: 1500px; */
+    /* background-color: red; */
+    border-right: 0.1em solid var(--color-details);
 }
 
 .aside-category {
@@ -269,15 +270,21 @@ body{
 
 .area__products{
     /* border: 1px solid black; */
-    height: 500px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cards-area {
-    padding: 0em 1em;
+    padding: 0em 0em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 86em;
+    max-width: 1000px;
+    /* border: 1px solid black; */
+    /* background-color: red; */
+
 }
 
 .cards-products{
@@ -290,6 +297,7 @@ body{
 .cards-products img {
     max-width: 100%;
     max-height: auto;
+    /* border: 1px solid black; */
 }
 
 .card-description {
@@ -304,6 +312,8 @@ body{
 
 .cards-purchase {
     display: flex;
+    /* border: 1px solid black; */
+    gap: 1em;
 }
 
 .price-information  {
@@ -329,7 +339,6 @@ body{
 }
 
 .button-buy {
-    /* border: 1px solid black; */
     flex: 1;
     align-self: center;
 }
@@ -337,87 +346,166 @@ body{
 .buy-product {
     background-color: rgb(59, 136, 59);
     color: var(--color-primary);
-    width: 100%;
+    width: 90%;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1.4em;
     font-weight: 600;
     border-radius: 20px/50%;
-    height: 2.8em;
+    height: 2.2em;
     border: none;
     box-shadow: 0px 1px 5px black ;
-
+    
 }
 
-.catalog {
+.products-pages {
+    margin-top: 40px;
+}
+
+.pages-area {
     display: flex;
-    border: 1px solid black;
-    background-color: yellow;
+    justify-content: center;  
+    gap: 0.8em;      
 }
 
-.catalog_filter, .catalog_products{
-    border: 1px solid black;
-    height: 400px;
-    width: 400px;
-    background-color: #A67E4E;
+.page a {
+    padding: 0.6em 1em;
+    border-radius: 50%;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    justify-self: center;
 }
 
-
-.section_products {
-    border: 1px solid black;
-    height: 80Vh;
-    background-color: #dce0e2;
-    border-radius: 6px;
-    padding: 12px;
-    display: flex;
-}
-
-.section_products .filter {
-    border: 1px solid black;
-    flex: 1;
-}
-
-.products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a.active {
+    color: var(--color-primary);
+    background-color: var(--color-text);
 }
 
 
-.section_products .products {
-    border: 1px solid black;
-    flex: 3;
-    margin-left: 16px;
-    padding: 8px;
+
+.footer_area_top p {
+    color: var(--color-primary);
+    background-image: url(/code/img/coffee_bg3.jpg);
+    background-color: rgba(0,0,0, .3);
+    background-blend-mode: color;
+    padding: 3em;
+    font-size: 2.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 1px black;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
 }
 
-.mudarNome {
+.footer_area_top p button {
+    background-color: var(--color-details);
+    border-radius: 16px;
+    padding: 0.2em 0.6em;
+    color: var(--color-text);
+    border: none;
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.footer_area_top p button:hover {
+    background-color: var(--color-brand);
+    outline: 0.01em solid var(--color-primary) ;
+    color: var(--color-primary);
+}
+
+.footer_area_mid {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;  
-    /* background-color: red; */
-    padding: 5px;
-    width: 100%;
-    height: 100%;
+    margin-top: 1.6em;
+    padding-right: 5em;
+    /* border: 1px solid black; */
 }
 
-
-.product_item{
-    border: 1px solid black;
-    width:  30%;
-    height: 33%;
-    margin-bottom: 15px;
+.contact-logo {
+    margin-bottom: 0.6em;
 }
 
-.pages {
-    width: 100%;
-    text-align: center;
-    border: 1px solid black;
+.contact-logo h6 {
+    font-size: 3.5em;
 }
 
-.pages a {
-    font-size: 1.8em;
+.contact-information p {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.socialmedias {
+    margin-top: 2em;
+    display: flex;
+    gap: 1.2em;
+}
+
+.socialmedias img {
+    width: 45px;
+    height: auto;
+}
+
+.footer_content-store,
+.footer_content-institucional,
+.footer_content-myaccount {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content-store h6 ,
+.footer_content-institucional h6,
+.footer_content-myaccount h6 {
+    margin: 0.4em 0;
+}
+
+.footer_content-store a, h6 ,
+.footer_content-institucional a, h6,
+.footer_content-myaccount a, h6 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    color: var(--color-text);
     text-decoration: none;
+    padding-bottom: 0.2em;
 }
 
+.footer_area_down {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content_payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content_payment h6 {
+    font-size: 1.4em;
+    color: var(--color-text);
+    margin-bottom: 0.6em;
+}
+
+.payment {
+    display: flex;
+    gap: 0.6em;
+}
+
+.payment img {
+    width: 28px;
+    height: auto;
+}
+
+.credits p {
+    text-align: center;
+    padding: 4em;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
 
